@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 601.0, 127.0, 623.0, 748.0 ],
+		"rect" : [ 856.0, 192.0, 596.0, 739.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,11 +39,23 @@
 		"subpatcher_template" : "Akiyuki_MaxTemplate",
 		"boxes" : [ 			{
 				"box" : 				{
+					"fontsize" : 20.0,
+					"id" : "obj-6",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 445.0, 57.0, 63.0, 29.0 ],
+					"text" : "v1.0.0"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-36",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 179.0, 681.0, 55.0, 20.0 ],
+					"patching_rect" : [ 184.0, 681.0, 55.0, 20.0 ],
 					"text" : "New line"
 				}
 
@@ -79,7 +91,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 145.0, 679.0, 29.5, 22.0 ],
+					"patching_rect" : [ 150.0, 679.0, 29.5, 22.0 ],
 					"text" : "cr"
 				}
 
@@ -91,7 +103,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "bang", "" ],
-					"patching_rect" : [ 145.0, 649.0, 34.0, 22.0 ],
+					"patching_rect" : [ 150.0, 649.0, 34.0, 22.0 ],
 					"text" : "sel 1"
 				}
 
@@ -117,8 +129,8 @@
 					"numinlets" : 5,
 					"numoutlets" : 4,
 					"outlettype" : [ "int", "", "", "int" ],
-					"patching_rect" : [ 108.0, 618.0, 75.0, 22.0 ],
-					"text" : "counter 1 10"
+					"patching_rect" : [ 108.0, 618.0, 82.0, 22.0 ],
+					"text" : "counter 1 100"
 				}
 
 			}
@@ -263,7 +275,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "bang", "int" ],
-					"patching_rect" : [ 144.0, 708.0, 40.0, 22.0 ],
+					"patching_rect" : [ 149.0, 708.0, 40.0, 22.0 ],
 					"text" : "text"
 				}
 
@@ -274,9 +286,9 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 3,
-					"outlettype" : [ "bang", "clear", "bang" ],
-					"patching_rect" : [ 78.0, 213.0, 102.0, 22.0 ],
-					"text" : "t b clear b"
+					"outlettype" : [ "bang", "clear", "int" ],
+					"patching_rect" : [ 78.0, 213.0, 132.0, 22.0 ],
+					"text" : "t b clear 1"
 				}
 
 			}
@@ -611,7 +623,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-7", 4 ],
+					"destination" : [ "obj-7", 2 ],
 					"source" : [ "obj-54", 2 ]
 				}
 
