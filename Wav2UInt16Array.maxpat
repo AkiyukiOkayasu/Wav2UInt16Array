@@ -273,10 +273,10 @@
 					"id" : "obj-54",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "bang", "clear" ],
-					"patching_rect" : [ 78.0, 213.0, 135.0, 22.0 ],
-					"text" : "t b clear"
+					"numoutlets" : 3,
+					"outlettype" : [ "bang", "clear", "bang" ],
+					"patching_rect" : [ 78.0, 213.0, 102.0, 22.0 ],
+					"text" : "t b clear b"
 				}
 
 			}
@@ -606,6 +606,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-34", 0 ],
 					"source" : [ "obj-54", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-7", 4 ],
+					"source" : [ "obj-54", 2 ]
 				}
 
 			}
